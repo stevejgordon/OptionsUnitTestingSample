@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C2529288-4DE7-4C31-A4AF-81B796CA4F2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8660A4C7-AE9A-41AA-9328-31FA39AB2CC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApi", "src\MyApi\MyApi.csproj", "{14F09CB2-3416-4CD0-BF31-54654FF10670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApiTests", "test\MyApiTests\MyApiTests.csproj", "{F3F94DF8-04C2-40C7-91FB-22734AD83564}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14F09CB2-3416-4CD0-BF31-54654FF10670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14F09CB2-3416-4CD0-BF31-54654FF10670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14F09CB2-3416-4CD0-BF31-54654FF10670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14F09CB2-3416-4CD0-BF31-54654FF10670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3F94DF8-04C2-40C7-91FB-22734AD83564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3F94DF8-04C2-40C7-91FB-22734AD83564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3F94DF8-04C2-40C7-91FB-22734AD83564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3F94DF8-04C2-40C7-91FB-22734AD83564}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14F09CB2-3416-4CD0-BF31-54654FF10670} = {8660A4C7-AE9A-41AA-9328-31FA39AB2CC8}
+		{F3F94DF8-04C2-40C7-91FB-22734AD83564} = {C2529288-4DE7-4C31-A4AF-81B796CA4F2C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6908F7F4-795F-426C-891C-01846F77CDF0}
+	EndGlobalSection
+EndGlobal
