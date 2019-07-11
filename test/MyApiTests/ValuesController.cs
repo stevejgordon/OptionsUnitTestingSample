@@ -1,6 +1,7 @@
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using Moq;
 using MyApi.Config;
 using MyApi.Controllers;
 using Xunit;
@@ -31,6 +32,19 @@ namespace MyApiTests
             var result = sut.Get();
 
             result.Result.Should().BeOfType<OkObjectResult>().Which.Value.Should().Be("Hello");
+        }
+
+        [Fact]
+        public void Get_ReturnsNotFoundResult_WhenConfigIsDisabled_UsingMock()
+        {
+            var options = new Mock<IOptions<MyConfig>>();
+            options.Setup(x => x.Value).Returns(new MyConfig {IsEnabled = false});
+
+            var sut = new ValuesController(options.Object);
+
+            var result = sut.Get();
+
+            result.Result.Should().BeOfType<NotFoundResult>();
         }
     }
 }
